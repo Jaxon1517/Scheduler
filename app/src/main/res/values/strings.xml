@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Scheduler</string>
+    <string name="home_welcome">Welcome back</string>
+    <string name="user_name" />
+    <string name="test_name">James</string>
+    <string name="test_time">08:00pm</string>
+    <string name="test_date">Sunday</string>
+    <string name="test_task">Walk the dog</string>
 </resources>
