@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Survey">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="225dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
