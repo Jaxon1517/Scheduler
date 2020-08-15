@@ -1,7 +1,5 @@
 package com.example.scheduler;
 
-import android.widget.LinearLayout;
-
 public class ActivityPosts {
     String Title;
     String Desc;
