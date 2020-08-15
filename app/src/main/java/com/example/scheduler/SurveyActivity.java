@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 import java.util.ArrayList;
 
-public class Survey extends AppCompatActivity {
+public class SurveyActivity extends AppCompatActivity {
 
 //    ArrayAdapter<ActivityPosts> aPosts = new ArrayList<>();
 
