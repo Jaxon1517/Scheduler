@@ -33,7 +33,7 @@ public class AddTasksActivity extends AppCompatActivity {
         intent.putExtra("taskName", taskName);
         intent.putExtra("startTime", startTime);
         intent.putExtra("endTime", endTime);
-        
+
         startActivity(intent);
     }
 }
