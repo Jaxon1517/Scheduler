@@ -1,6 +1,7 @@
 package com.example.scheduler;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,24 +9,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class AboutActivity extends AppCompatActivity {
+import com.github.appintro.AppIntro;
 
-    TextView titleTextView;
-    TextView descriptionTextView;
-    Button startButton;
+public class AboutActivity extends AppIntro {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about2);
-
-        titleTextView = findViewById(R.id.titleTextView);
-        descriptionTextView = findViewById(R.id.descriptionTextView);
-        startButton = findViewById(R.id.startButton);
+    }
+    @Override
+    public void onSkipPressed(Fragment currentFragment) {
+        super.onSkipPressed(currentFragment);
+        // Decide what to do when the user clicks on "Skip"
     }
 
-    public void goToSurveyActivity(View view) {
-        Intent intent = new Intent(this, SurveyActivity.class);
-        startActivity(intent);
+    @Override
+     public void onDonePressed(Fragment currentFragment ) {
+        super.onDonePressed(currentFragment);
+        // Decide what to do when the user clicks on "Done"
     }
 }
