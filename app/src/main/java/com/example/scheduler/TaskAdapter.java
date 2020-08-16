@@ -23,6 +23,9 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         TextView titleTextView = convertView.findViewById(R.id.titleTextView);
         titleTextView.setText(activityMsg.getTitle());
 
+        TextView startTimeView = convertView.findViewById(R.id.startTextView);
+        startTimeView.setText(activityMsg.getStartTime());
+
         return convertView;
     }
 

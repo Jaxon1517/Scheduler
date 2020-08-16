@@ -1,5 +1,7 @@
 package com.example.scheduler;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.TimePickerDialog;
@@ -16,6 +18,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class AddTasksActivity extends AppCompatActivity {
 
     EditText taskNameEditText;
@@ -25,6 +33,9 @@ public class AddTasksActivity extends AppCompatActivity {
     int t1hour, t1minute;
     TextView Timer2;
     int t1hour2, t1minute2;
+    DatabaseReference databasePosts;
+    FirebaseDatabase database;
+
 
 
     @Override
@@ -35,6 +46,8 @@ public class AddTasksActivity extends AppCompatActivity {
         taskNameEditText = findViewById(R.id.task_name_edit_text);
         startTimeEditText = findViewById(R.id.start_time_edit_text);
         endTimeEditText = findViewById(R.id.end_time_edit_text);
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        databasePosts = database.getReference().child("Tasks");
         Timer = findViewById(R.id.start_time_edit_text);
         Timer2 = findViewById(R.id.end_time_edit_text);
 
@@ -110,11 +123,18 @@ public class AddTasksActivity extends AppCompatActivity {
     }
 
     public void createButtonPressed(View view) {
-        Intent intent = new Intent(this, TasksActivity.class);
-
         String taskName = taskNameEditText.getText().toString();
         String startTime = startTimeEditText.getText().toString();
         String endTime = endTimeEditText.getText().toString();
+
+        taskNameEditText.setText("");
+        startTimeEditText.setText("");
+        endTimeEditText.setText("");
+        System.out.print(taskName);
+        Task postMessage = new Task(taskName, startTime, endTime);
+        databasePosts.push().setValue(postMessage);
+
+        Intent intent = new Intent(this, SchedulePageActivity.class);
 
         intent.putExtra("taskName", taskName);
         intent.putExtra("startTime", startTime);
@@ -128,7 +148,7 @@ public class AddTasksActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void goTask(View view){
-        Intent intent = new Intent(this, TasksActivity.class);
+        Intent intent = new Intent(this, SchedulePageActivity.class);
         startActivity(intent);
     }
     public void goAddTask(View view){
