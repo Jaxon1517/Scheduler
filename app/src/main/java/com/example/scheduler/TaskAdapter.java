@@ -24,7 +24,6 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         titleTextView.setText(activityMsg.getTitle());
 
         return convertView;
-
     }
 
 

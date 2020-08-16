@@ -7,10 +7,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class SchedulePage extends AppCompatActivity {
-    ActivityPostAdapter ActivityPostsAdapter;
+public class SchedulePageActivity extends AppCompatActivity {
+    TaskAdapter adapter;
 
-    ArrayList<ActivityPosts> Posts = new ArrayList<>();
+    ArrayList<Task> tasks = new ArrayList<>();
 
 
 
@@ -22,7 +22,7 @@ public class SchedulePage extends AppCompatActivity {
 
 
         //Create and Set Adapter
-        ActivityPostsAdapter = new ActivityPostAdapter(this, Posts);
-        aView.setAdapter(ActivityPostsAdapter);
+        adapter = new TaskAdapter(this, tasks);
+        aView.setAdapter(adapter);
     }
 }
