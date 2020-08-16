@@ -117,8 +117,10 @@
         android:background="#FFEAEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -132,6 +134,7 @@
         android:layout_marginBottom="35dp"
         android:background="@android:color/transparent"
         android:tint="#293241"
+        android:onClick="goHome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,6 +149,7 @@
         android:layout_marginBottom="35dp"
         android:background="@android:color/transparent"
         android:tint="#293241"
+        android:onClick="goTask"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/view4"
         app:layout_constraintStart_toStartOf="@+id/view4"
@@ -164,6 +168,7 @@
         android:layout_marginBottom="35dp"
         android:background="@android:color/transparent"
         android:tint="#293241"
+        android:onClick="goAddTask"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
