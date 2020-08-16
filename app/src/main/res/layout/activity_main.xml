@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/proxima_nova"
         android:text="Defuse"
+        android:layout_gravity="center_horizontal"
         android:textColor="#FF436D"
         android:textSize="64sp" />
 
