@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public class SchedulePage extends AppCompatActivity {
     ActivityPostAdapter ActivityPostsAdapter;
+
     ArrayList<ActivityPosts> Posts = new ArrayList<>();
 
 
