@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void goTask(View view){
-        Intent intent = new Intent(this, TasksActivity.class);
+        Intent intent = new Intent(this, SchedulePageActivity.class);
         startActivity(intent);
     }
     public void goAddTask(View view){

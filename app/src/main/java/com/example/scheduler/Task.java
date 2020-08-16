@@ -1,9 +1,9 @@
 package com.example.scheduler;
 
 public class Task {
-    private String title;
-    private String startTime;
-    private String endTime;
+     String title;
+     String startTime;
+     String endTime;
 
     public Task(String title, String startTime, String endTime) {
         this.title = title;

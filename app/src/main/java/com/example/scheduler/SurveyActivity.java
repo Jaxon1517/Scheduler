@@ -21,9 +21,7 @@ import java.util.Date;
 
 public class SurveyActivity extends AppCompatActivity {
 
-    TextView wakeUpEditText;
-    TextView sleepEditText;
-    TextView nextButton;
+
     TextView Timer;
     int t1hour, t1minute;
     TextView Timer2;
@@ -39,11 +37,8 @@ public class SurveyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
 
-        wakeUpEditText = findViewById(R.id.wakeUpEditText);
-        sleepEditText = findViewById(R.id.sleepEditText);
-        nextButton = findViewById(R.id.nextButton);
         Timer = findViewById(R.id.sleepTime);
-        Timer2 = findViewById(R.id.wakeUpEditText);
+        Timer2 = findViewById(R.id.wakeupTime);
         Timer3 = findViewById(R.id.StartWorkTIme);
         Timer4 = findViewById(R.id.endWorkTime);
 
@@ -186,13 +181,8 @@ public class SurveyActivity extends AppCompatActivity {
 
 
     }
-
-    public void nextButtonPressed(View view) {
+    public void goHome(View view){
         Intent intent = new Intent(this, HomeActivity.class);
-
-        intent.putExtra("wakeUpTime", wakeUpEditText.getText().toString());
-        intent.putExtra("sleepTime", sleepEditText.getText().toString());
-
         startActivity(intent);
     }
 }
