@@ -50,7 +50,7 @@
                 android:background="@android:color/transparent"
                 android:onClick="goHome"
                 android:tint="#293241"
-                app:srcCompat="@drawable/ic_baseline_home_24" />
+                app:srcCompat="@drawable/ic_baseline_dashboard_24" />
 
             <ImageButton
                 android:id="@+id/imageButton4"
