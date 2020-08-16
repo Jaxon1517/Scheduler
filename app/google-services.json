@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "692125539797",
+    "firebase_url": "https://defuse-fb331.firebaseio.com",
+    "project_id": "defuse-fb331",
+    "storage_bucket": "defuse-fb331.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692125539797:android:ea214e8e40888a23dcf15c",
+        "android_client_info": {
+          "package_name": "com.example.scheduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692125539797-voe7v935cck2dne70ptc8uomcs0crgmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQNAN9XlycG2c8xSzrlxEiAj_Bo12tFhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692125539797-voe7v935cck2dne70ptc8uomcs0crgmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
