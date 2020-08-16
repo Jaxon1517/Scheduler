@@ -13,9 +13,8 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-
         android:layout_marginTop="200dp"
-        tools:srcCompat="@drawable/Defuse" />
+        tools:srcCompat="@drawable/defuse" />
 
     <TextView
         android:id="@+id/textView13"
