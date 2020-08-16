@@ -11,37 +11,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
         android:text="Survey"
         android:textColor="#FF3369"
         android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/wakeUpEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/wakeUpEditText"
+        android:id="@+id/sleepTextView"
         android:layout_width="320dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
-        android:text="what time do you go to sleep"
+        android:text="What time do you go to sleep?"
         android:textColor="#000000"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/sleepTime"
-        app:layout_constraintEnd_toEndOf="@+id/survey_text_view"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/survey_text_view"
-        app:layout_constraintTop_toBottomOf="@+id/survey_text_view"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wakeupTime" />
 
     <TextView
         android:id="@+id/sleepTime"
         android:layout_width="269dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:foregroundGravity="center_horizontal"
@@ -52,33 +47,30 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/sleepEditText"
-        app:layout_constraintEnd_toEndOf="@+id/wakeUpEditText"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="@+id/wakeUpEditText"
-        app:layout_constraintTop_toBottomOf="@+id/wakeUpEditText" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepTextView" />
 
     <TextView
-        android:id="@+id/sleepEditText"
+        android:id="@+id/wakeUpTextView"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
-        android:text="what time do you wake up?"
+        android:text="What time do you wake up?"
         android:textColor="#000000"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/wakeupTime"
-        app:layout_constraintEnd_toEndOf="@+id/sleepTime"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="@+id/sleepTime"
-        app:layout_constraintTop_toBottomOf="@+id/sleepTime" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survey_text_view" />
 
     <TextView
         android:id="@+id/wakeupTime"
         android:layout_width="269dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:foregroundGravity="center_horizontal"
@@ -89,34 +81,30 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/start_work_time_edit_text"
-        app:layout_constraintEnd_toEndOf="@+id/sleepEditText"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="@+id/sleepEditText"
-        app:layout_constraintTop_toBottomOf="@+id/sleepEditText" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wakeUpTextView" />
 
 
     <TextView
         android:id="@+id/start_work_time_edit_text"
         android:layout_width="341dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
         android:text="What time do you start Work/School?"
         android:textColor="#000000"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/StartWorkTIme"
-        app:layout_constraintEnd_toEndOf="@+id/wakeupTime"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/wakeupTime"
-        app:layout_constraintTop_toBottomOf="@+id/wakeupTime" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepTime" />
 
     <TextView
         android:id="@+id/StartWorkTIme"
         android:layout_width="269dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:foregroundGravity="center_horizontal"
@@ -127,16 +115,15 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/end_time_edit_text"
-        app:layout_constraintEnd_toEndOf="@+id/start_work_time_edit_text"
-        app:layout_constraintStart_toStartOf="@+id/start_work_time_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/start_work_time_edit_text" />
 
     <TextView
         android:id="@+id/endWorkTime"
         android:layout_width="269dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/edit"
         android:ems="10"
         android:foregroundGravity="center_horizontal"
@@ -147,25 +134,22 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/nextButton"
-        app:layout_constraintEnd_toEndOf="@+id/end_time_edit_text"
-        app:layout_constraintStart_toStartOf="@+id/end_time_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/end_time_edit_text" />
 
     <TextView
         android:id="@+id/end_time_edit_text"
         android:layout_width="341dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="center"
         android:text="What time do you stop Work/School?"
         android:textColor="#000000"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/endWorkTime"
-        app:layout_constraintEnd_toEndOf="@+id/StartWorkTIme"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/StartWorkTIme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/StartWorkTIme" />
 
     <TextView
@@ -182,8 +166,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/endWorkTime" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
