@@ -9,16 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutActivity"></activity>
-        <activity android:name=".addActivity" />
-        <activity android:name=".SchedulePage" />
-        <activity android:name=".Survey" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".AboutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".AddActivity" />
+        <activity android:name=".SchedulePage" />
+        <activity android:name=".SurveyActivity" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
