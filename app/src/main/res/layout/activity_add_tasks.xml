@@ -101,7 +101,7 @@
 
     <EditText
         android:id="@+id/task_name_edit_text"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:ems="10"
@@ -109,13 +109,13 @@
         android:inputType="textPersonName"
         android:textColor="#6c757d"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/new_task_text_view" />
 
     <EditText
         android:id="@+id/start_time_edit_text"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
         android:ems="10"
@@ -123,14 +123,14 @@
         android:inputType="textPersonName"
         android:text=""
         android:textColor="#6c757d"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/task_name_edit_text"
         app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/task_name_edit_text"
         app:layout_constraintTop_toBottomOf="@+id/task_name_edit_text" />
 
     <EditText
         android:id="@+id/end_time_edit_text"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:ems="10"
@@ -138,19 +138,19 @@
         android:inputType="textPersonName"
         android:text=""
         android:textColor="#6c757d"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/start_time_edit_text"
         app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/start_time_edit_text"
         app:layout_constraintTop_toBottomOf="@+id/start_time_edit_text" />
 
     <Button
         android:id="@+id/create_button"
-        android:layout_width="400dp"
+        android:layout_width="420dp"
         android:layout_height="75dp"
         android:layout_marginTop="96dp"
+        android:background="#FF436D"
         android:fontFamily="@font/proxima_nova"
         android:text="Create"
-        android:background="#FF436D"
         android:textColor="#293241"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
