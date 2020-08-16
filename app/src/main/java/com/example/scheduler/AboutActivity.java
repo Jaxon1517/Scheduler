@@ -31,7 +31,7 @@ public class AboutActivity extends AppIntro {
                 R.drawable.planiitlogo,
                 ContextCompat.getColor(getApplicationContext(),R.color.mainPurp)));
         addSlide(AppIntroFragment.newInstance(
-                "Organizations",
+                "Organization",
                 "Go through our short survey in order to optimize your schedule.",
                 R.drawable.planiitlogo,
                 ContextCompat.getColor(getApplicationContext(),R.color.sndLight),
