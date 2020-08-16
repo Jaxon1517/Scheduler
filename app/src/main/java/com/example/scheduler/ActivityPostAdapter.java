@@ -6,22 +6,33 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextClock;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import java.util.ArrayList;
 
 public class ActivityPostAdapter extends ArrayAdapter<ActivityPosts> {
     public ActivityPostAdapter(Context context, ArrayList<ActivityPosts> list) {
         super(context, 0, list);
     }
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent){
+        convertView = LayoutInflater.from(getContext()).inflate(R.layout.a_list_item, parent, false);
+        ActivityPosts activityMsg = getItem(position);
 
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        TextView titleTextView = convertView.findViewById(R.id.titleTextView);
+        titleTextView.setText(activityMsg.getTitle());
+
+        TextView DescTextView = convertView.findViewById(R.id.descTextView);
+        DescTextView.setText(activityMsg.getTitle());
+
+
+
 
         return convertView;
+
     }
+
+
+
 }
