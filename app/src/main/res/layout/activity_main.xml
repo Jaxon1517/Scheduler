@@ -11,19 +11,20 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="186dp"
+        android:layout_height="181dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/defuse" />
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/defuseit" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
+        android:layout_width="222dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/proxima_nova"
         android:text="Defuse"
         android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:textColor="#FF436D"
         android:textSize="64sp" />
 
