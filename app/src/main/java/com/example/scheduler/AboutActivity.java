@@ -32,7 +32,7 @@ public class AboutActivity extends AppIntro {
                 ContextCompat.getColor(getApplicationContext(),R.color.mainPurp)));
         addSlide(AppIntroFragment.newInstance(
                 "Wellness",
-                "A description that will be shown on the bottom",
+                "Checks up on your mental health",
                 R.drawable.planiitlogo,
                 ContextCompat.getColor(getApplicationContext(),R.color.sndLight),
                 Color.BLACK,
