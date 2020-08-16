@@ -13,8 +13,6 @@ import java.util.ArrayList;
 
 public class SurveyActivity extends AppCompatActivity {
 
-//    ArrayAdapter<ActivityPosts> aPosts = new ArrayList<>();
-
     EditText wakeUpEditText;
     EditText sleepEditText;
     Button nextButton;

@@ -1,28 +1,44 @@
 package com.example.scheduler;
 
 public class ActivityPosts {
-    String Title;
-    String Desc;
+    private String title;
+    private String startTime;
+    private String endTime;
 
-    public ActivityPosts(){}
-
-    public ActivityPosts(String Title, String Desc){
-        this.Title = Title;
-        this.Desc = Desc;
+    public ActivityPosts(String title, String startTime, String endTime) {
+        this.title = title;
+        this.startTime = startTime;
+        this.endTime = endTime;
     }
+
+    public ActivityPosts(String title) {
+        this.title = title;
+    }
+    
+    public ActivityPosts() { }
+
     public String getTitle() {
-        return Title;
-    }
-    public void setTitle(String Title) {
-        this.Title = Title;
+        return title;
     }
 
-    public String getDesc() {
-        return Desc;
-    }
-    public void setDesc(String Desc) {
-        this.Desc = Desc;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
+    }
 }
 
