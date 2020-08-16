@@ -175,7 +175,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button"
         android:gravity="center"
-        android:onClick="nextButtonPressed"
+        android:onClick="goHome"
         android:text="Next"
         android:textColor="#ffffff"
         android:textSize="20sp"
