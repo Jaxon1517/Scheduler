@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Tasks"
+        android:layout_gravity="center"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +22,7 @@
     <ListView
         android:id="@+id/tasks_list"
         android:layout_width="match_parent"
-        android:layout_height="568dp"
+        android:layout_height="597dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +37,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="56dp">
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/imageButton3"
@@ -44,7 +45,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="71dp"
                 android:layout_marginLeft="71dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginEnd="75dp"
                 android:layout_marginRight="75dp"
                 android:background="@android:color/transparent"
@@ -56,7 +56,6 @@
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:background="@android:color/transparent"
                 android:onClick="goTask"
                 android:tint="#293241"
@@ -68,7 +67,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="71dp"
                 android:layout_marginLeft="71dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginEnd="75dp"
                 android:layout_marginRight="75dp"
                 android:background="@android:color/transparent"
@@ -80,7 +78,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="52dp">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/textView9"
@@ -91,7 +89,6 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="75dp"
                 android:layout_marginRight="75dp"
-                android:layout_marginBottom="18dp"
                 android:fontFamily="@font/proxima_nova"
                 android:text="Home"
                 android:textColor="#293241" />
@@ -100,8 +97,8 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/proxima_nova"
                 android:text="Tasks"
                 android:textColor="#293241" />
@@ -115,7 +112,6 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="75dp"
                 android:layout_marginRight="80dp"
-                android:layout_marginBottom="18dp"
                 android:fontFamily="@font/proxima_nova"
                 android:text="Add Task"
                 android:textColor="#293241" />
