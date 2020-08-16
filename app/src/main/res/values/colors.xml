@@ -8,4 +8,5 @@
     <color name="sndLight">#FFEAEF</color>
     <color name="mainLight">#FFFFFF</color>
     <color name="mainDark">#293241</color>
+    <color name="mainPurp">#C6ADFF</color>
 </resources>
