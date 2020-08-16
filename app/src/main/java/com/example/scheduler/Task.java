@@ -11,10 +11,6 @@ public class Task {
         this.endTime = endTime;
     }
 
-    public Task(String title) {
-        this.title = title;
-    }
-
     public Task() { }
 
     public String getTitle() {
