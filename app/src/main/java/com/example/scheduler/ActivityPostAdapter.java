@@ -23,12 +23,6 @@ public class ActivityPostAdapter extends ArrayAdapter<ActivityPosts> {
         TextView titleTextView = convertView.findViewById(R.id.titleTextView);
         titleTextView.setText(activityMsg.getTitle());
 
-        TextView DescTextView = convertView.findViewById(R.id.descTextView);
-        DescTextView.setText(activityMsg.getTitle());
-
-
-
-
         return convertView;
 
     }

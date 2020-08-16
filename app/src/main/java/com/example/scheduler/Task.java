@@ -1,21 +1,21 @@
 package com.example.scheduler;
 
-public class ActivityPosts {
+public class Task {
     private String title;
     private String startTime;
     private String endTime;
 
-    public ActivityPosts(String title, String startTime, String endTime) {
+    public Task(String title, String startTime, String endTime) {
         this.title = title;
         this.startTime = startTime;
         this.endTime = endTime;
     }
 
-    public ActivityPosts(String title) {
+    public Task(String title) {
         this.title = title;
     }
-    
-    public ActivityPosts() { }
+
+    public Task() { }
 
     public String getTitle() {
         return title;
