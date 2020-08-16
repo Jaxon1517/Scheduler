@@ -7,26 +7,22 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/planiitlogo" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieAddCreate"
-        android:layout_width="411dp"
-        android:layout_height="204dp"
+        android:id="@+id/lottieLoad"
+        android:layout_width="311dp"
+        android:layout_height="117dp"
         android:layout_gravity="center"
-        android:layout_marginStart="53dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="205dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginTop="20dp"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/loadb" />
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/loadex" />
 
 </LinearLayout>

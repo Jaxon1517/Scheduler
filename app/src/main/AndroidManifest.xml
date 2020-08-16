@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".addActivity"></activity>
         <activity android:name=".SchedulePage" />
-        <activity android:name=".Survey" />
+        <activity android:name=".SurveyActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
