@@ -8,16 +8,18 @@
     android:orientation="vertical"
     >
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
-        tools:srcCompat="@drawable/defuse" />
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/defuse" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="222dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/proxima_nova"
         android:text="Defuse"
