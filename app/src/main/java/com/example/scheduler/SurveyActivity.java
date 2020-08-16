@@ -28,7 +28,7 @@ public class SurveyActivity extends AppCompatActivity {
     }
 
     public void nextButtonPressed(View view) {
-        Intent intent = new Intent(this, TasksActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
 
         intent.putExtra("wakeUpTime", wakeUpEditText.getText().toString());
         intent.putExtra("sleepTime", sleepEditText.getText().toString());
