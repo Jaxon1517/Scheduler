@@ -23,17 +23,17 @@ public class AboutActivity extends AppIntro {
         addSlide(AppIntroFragment.newInstance(
                 "Welcome to Defuse",
                 "Unpacks all the volume causing stress inside your brain.",
-                R.drawable.planiitlogo,
+                R.drawable.bag,
                 ContextCompat.getColor(getApplicationContext(),R.color.mainRed)));
         addSlide(AppIntroFragment.newInstance(
                 "Wellness",
                 "Checks up on your mental health",
-                R.drawable.planiitlogo,
+                R.drawable.brain,
                 ContextCompat.getColor(getApplicationContext(),R.color.mainPurp)));
         addSlide(AppIntroFragment.newInstance(
                 "Organization",
                 "Go through our short survey in order to optimize your schedule.",
-                R.drawable.planiitlogo,
+                R.drawable.organization,
                 ContextCompat.getColor(getApplicationContext(),R.color.sndLight),
                 Color.BLACK,
                 Color.BLACK));
