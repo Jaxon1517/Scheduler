@@ -17,7 +17,7 @@
         android:tint="#293241"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         app:layout_constraintTop_toTopOf="@+id/view4"
-        app:srcCompat="@drawable/dash" />
+        tools:srcCompat="@drawable/ic_baseline_dashboard_24" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="@+id/view4"
         app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/view4"
-        app:srcCompat="@drawable/ic_baseline_assignment_24" />
+        tools:srcCompat="@drawable/ic_baseline_assignment_24" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -42,7 +42,7 @@
         android:tint="#293241"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
         app:layout_constraintTop_toTopOf="@+id/view4"
-        app:srcCompat="@drawable/ic_baseline_post_add_24" />
+        tools:srcCompat="@drawable/ic_baseline_post_add_24" />
 
     <TextView
         android:id="@+id/textView4"
