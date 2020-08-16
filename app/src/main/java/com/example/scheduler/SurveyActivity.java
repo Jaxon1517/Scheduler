@@ -1,5 +1,7 @@
 package com.example.scheduler;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.TimePickerDialog;
@@ -22,6 +24,9 @@ import java.util.Date;
 public class SurveyActivity extends AppCompatActivity {
 
 
+    TextView Titleview;
+    TextView Subjectview;
+    TextView Teacherview;
     TextView Timer;
     int t1hour, t1minute;
     TextView Timer2;
@@ -36,6 +41,8 @@ public class SurveyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
+
+
 
         Timer = findViewById(R.id.sleepTime);
         Timer2 = findViewById(R.id.wakeupTime);
@@ -177,8 +184,6 @@ public class SurveyActivity extends AppCompatActivity {
                 timePickerDialog.show();
             }
         });
-
-
 
     }
     public void goHome(View view){
