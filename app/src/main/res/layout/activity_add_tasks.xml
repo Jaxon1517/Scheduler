@@ -38,7 +38,7 @@
         android:hint="Enter Task Name"
         android:inputType="textPersonName"
         android:background="@drawable/edit"
-        android:textColor="#fffffff"
+        android:textColor="#ffffff"
         android:textColorHint="#ffffff" />
 
     <TextView
@@ -69,7 +69,7 @@
         android:hint="Enter Start Time"
         android:inputType="textPersonName"
         android:background="@drawable/edit"
-        android:textColor="#fffffff"
+        android:textColor="#ffffff"
         android:textColorHint="#ffffff" />
 
     <TextView
@@ -101,7 +101,7 @@
         android:inputType="textPersonName"
         android:text=""
         android:background="@drawable/edit"
-        android:textColor="#fffffff"
+        android:textColor="#ffffff"
         android:textColorHint="#ffffff"
         />
 
