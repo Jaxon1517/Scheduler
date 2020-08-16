@@ -24,7 +24,7 @@ public class AddTasksActivity extends AppCompatActivity {
     }
 
     public void createButtonPressed(View view) {
-        Intent intent = new Intent(this, TasksActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
 
         String taskName = taskNameEditText.getText().toString();
         String startTime = startTimeEditText.getText().toString();
