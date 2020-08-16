@@ -23,12 +23,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="72dp"
         android:fontFamily="@font/proxima_nova"
-        android:text=""
+        android:text="James"
         android:textColor="#FF436D"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/test_name" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -62,7 +61,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="36dp"
-        android:text="@string/test_time"
+        android:text="08:00pm"
         android:textColor="#6c757d"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/view2"
@@ -76,13 +75,12 @@
         android:layout_marginLeft="116dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/proxima_nova"
-        android:text=""
+        android:text="Walk the dog"
         android:textColor="#293241"
         android:textSize="20sp"
 
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2"
-        tools:text="@string/test_task" />
+        app:layout_constraintTop_toTopOf="@+id/view2" />
 
     <View
         android:id="@+id/view4"
@@ -111,9 +109,10 @@
         android:layout_marginTop="15dp"
         android:background="@android:color/transparent"
         android:tint="#293241"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/view4"
-        app:srcCompat="@drawable/ic_baseline_assignment_24"
-        tools:layout_editor_absoluteX="185dp" />
+        app:srcCompat="@drawable/ic_baseline_assignment_24" />
 
     <ImageButton
         android:id="@+id/imageButton5"
