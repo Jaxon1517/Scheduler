@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddTasksActivity"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".AddTasksActivity" />
         <activity android:name=".TasksActivity" />
-        <activity android:name=".AboutActivity">
-        </activity>
+        <activity android:name=".AboutActivity"></activity>
         <activity android:name=".SchedulePageActivity" />
         <activity android:name=".SurveyActivity" />
         <activity android:name=".MainActivity">
