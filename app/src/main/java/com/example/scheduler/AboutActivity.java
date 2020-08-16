@@ -21,17 +21,17 @@ public class AboutActivity extends AppIntro {
         super.onCreate(savedInstanceState);
         //adds first of intro slides
         addSlide(AppIntroFragment.newInstance(
-                "The title of your slide",
-                "A description that will be shown on the bottom",
+                "Welcome to Defuse",
+                "Unpacks all the volume causing stress inside your brain.",
                 R.drawable.planiitlogo,
                 ContextCompat.getColor(getApplicationContext(),R.color.mainRed)));
         addSlide(AppIntroFragment.newInstance(
-                "The title of your slide",
-                "A description that will be shown on the bottom",
+                "Organization",
+                "",
                 R.drawable.planiitlogo,
                 ContextCompat.getColor(getApplicationContext(),R.color.mainPurp)));
         addSlide(AppIntroFragment.newInstance(
-                "The title of your slide",
+                "Wellness",
                 "A description that will be shown on the bottom",
                 R.drawable.planiitlogo,
                 ContextCompat.getColor(getApplicationContext(),R.color.sndLight),
