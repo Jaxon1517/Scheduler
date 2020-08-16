@@ -2,6 +2,7 @@ package com.example.scheduler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -15,19 +16,12 @@ import android.widget.TimePicker;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.ArrayList;
 import java.util.Date;
 
 public class SurveyActivity extends AppCompatActivity {
 
-    DatabaseReference databaseWake;
-    DatabaseReference databaseSleep;
-    TextView wakeUpEditText;
-    TextView sleepEditText;
-    TextView nextButton;
+
     TextView Timer;
     int t1hour, t1minute;
     TextView Timer2;
@@ -43,15 +37,8 @@ public class SurveyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
 
-        wakeUpEditText = findViewById(R.id.wakeUpEditText);
-        sleepEditText = findViewById(R.id.sleepEditText);
-        nextButton = findViewById(R.id.nextButton);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        databaseWake = database.getReference().child("wakeup");
-        databaseSleep = database.getReference().child("sleep");
-
         Timer = findViewById(R.id.sleepTime);
-        Timer2 = findViewById(R.id.wakeUpEditText);
+        Timer2 = findViewById(R.id.wakeupTime);
         Timer3 = findViewById(R.id.StartWorkTIme);
         Timer4 = findViewById(R.id.endWorkTime);
 
@@ -194,17 +181,8 @@ public class SurveyActivity extends AppCompatActivity {
 
 
     }
-
-    public void nextButtonPressed(View view) {
+    public void goHome(View view){
         Intent intent = new Intent(this, HomeActivity.class);
-        String wakeUp = wakeUpEditText.getText().toString();
-        String sleep = sleepEditText.getText().toString();
-
-
-
-        intent.putExtra("wakeUpTime", wakeUp);
-        intent.putExtra("sleepTime", sleep);
-
         startActivity(intent);
     }
 }
