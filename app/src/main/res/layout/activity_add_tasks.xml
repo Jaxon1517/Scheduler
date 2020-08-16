@@ -1,67 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddTasksActivity">
+    tools:context=".AddTasksActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#C6ADFF"
+    >
 
     <TextView
         android:id="@+id/new_task_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="New Task"
+        android:layout_marginTop="36dp"
+        android:text="Create A New Task"
         android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
+
+    <TextView
+        android:id="@+id/new_task_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Task Name"
+        android:textSize="23sp"
+        />
 
     <EditText
         android:id="@+id/task_name_edit_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_width="222dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="Enter Task Name"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/new_task_text_view" />
+        android:background="@drawable/edit"
+        android:textColor="#fffffff"
+        android:textColorHint="#ffffff" />
+
+    <TextView
+        android:id="@+id/new_task_title2_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Start Time"
+        android:textSize="23sp"
+        />
+
+    <TextView
+        android:id="@+id/optional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(optional)"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        />
 
     <EditText
         android:id="@+id/start_time_edit_text"
+        android:layout_width="222dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Start Time"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit"
+        android:textColor="#fffffff"
+        android:textColorHint="#ffffff" />
+
+    <TextView
+        android:id="@+id/new_task_title3_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:text=""
-        android:hint="Enter Start Time (Optional)"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/task_name_edit_text" />
+        android:text="End TIme"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/optional1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(optional)"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        />
 
     <EditText
         android:id="@+id/end_time_edit_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_width="222dp"
+        android:layout_height="44dp"
         android:ems="10"
-        android:text=""
-        android:hint="Enter End Time (Optional)"
+        android:gravity="center"
+        android:hint="Enter End Time"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/start_time_edit_text" />
+        android:text=""
+        android:background="@drawable/edit"
+        android:textColor="#fffffff"
+        android:textColorHint="#ffffff"
+        />
 
     <Button
         android:id="@+id/create_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         android:text="Create"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/end_time_edit_text" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+</LinearLayout>

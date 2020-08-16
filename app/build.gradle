@@ -34,6 +34,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.github.AppIntro:AppIntro:6.0.0'
     implementation 'com.github.AppIntro:AppIntro:4.2.3'
+
     implementation 'com.airbnb.android:lottie:3.4.1'
 
 }
