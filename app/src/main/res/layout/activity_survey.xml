@@ -154,9 +154,9 @@
 
     <TextView
         android:id="@+id/nextButton"
-        android:layout_width="100dp"
+        android:layout_width="125dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/button"
         android:gravity="center"
         android:onClick="goHome"
