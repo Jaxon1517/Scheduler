@@ -122,6 +122,7 @@ public class AddTasksActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
     public void goHome(View view){
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
