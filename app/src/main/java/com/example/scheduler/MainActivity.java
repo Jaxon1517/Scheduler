@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 
-import com.airbnb.lottie.LottieAnimationView;
-
 public class MainActivity extends AppCompatActivity {
 
     private static int Next = 3000;

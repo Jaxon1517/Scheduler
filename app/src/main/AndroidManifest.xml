@@ -12,15 +12,16 @@
         <activity android:name=".AddTasksActivity"></activity>
         <activity android:name=".TasksActivity" />
         <activity android:name=".AboutActivity">
+        </activity>
+        <activity android:name=".SchedulePageActivity" />
+        <activity android:name=".SurveyActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SchedulePageActivity" />
-        <activity android:name=".SurveyActivity" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
