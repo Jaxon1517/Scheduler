@@ -24,17 +24,17 @@ public class AboutActivity extends AppIntro {
                 "The title of your slide",
                 "A description that will be shown on the bottom",
                 R.drawable.planiitlogo,
-                ContextCompat.getColor(getApplicationContext(),R.color.mainRed)));
+                ContextCompat.getColor(getApplicationContext(),R.color.mainLight)));
         addSlide(AppIntroFragment.newInstance(
                 "The title of your slide",
                 "A description that will be shown on the bottom",
                 R.drawable.planiitlogo,
-                ContextCompat.getColor(getApplicationContext(),R.color.mainRed)));
+                ContextCompat.getColor(getApplicationContext(),R.color.sndLight)));
         addSlide(AppIntroFragment.newInstance(
                 "The title of your slide",
                 "A description that will be shown on the bottom",
                 R.drawable.planiitlogo,
-                ContextCompat.getColor(getApplicationContext(),R.color.mainRed)));
+                ContextCompat.getColor(getApplicationContext(),R.color.mainLight)));
     }
     @Override
     public void onSkipPressed(Fragment currentFragment) {
