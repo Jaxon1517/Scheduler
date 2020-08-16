@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:layout_marginStart="53dp"
         android:layout_marginLeft="53dp"
-        android:layout_marginTop="437dp"
+        android:layout_marginTop="350dp"
         android:layout_marginEnd="53dp"
         android:layout_marginRight="53dp"
         android:layout_marginBottom="205dp"
@@ -27,6 +27,6 @@
         app:layout_constraintVertical_bias="1.0"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/load" />
+        app:lottie_rawRes="@raw/loadb" />
 
 </LinearLayout>
