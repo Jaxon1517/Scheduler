@@ -1,115 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddTasksActivity"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:background="#C6ADFF"
-    >
+    tools:context=".AddTasksActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@android:color/transparent"
+        android:tint="#293241"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:tint="#293241"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:srcCompat="@drawable/ic_baseline_assignment_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:tint="#293241"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:srcCompat="@drawable/ic_baseline_post_add_24" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Home"
+        android:textColor="#293241"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Tasks"
+        android:textColor="#293241"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Add Task"
+        android:textColor="#293241"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:background="#FFEAEF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/new_task_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Create A New Task"
-        android:textSize="32sp"
-        />
-
-    <TextView
-        android:id="@+id/new_task_title_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="Task Name"
-        android:textSize="23sp"
-        />
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/proxima_nova"
+        android:text="Add Task"
+        android:textColor="#293241"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/task_name_edit_text"
-        android:layout_width="222dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:ems="10"
-        android:gravity="center"
-        android:hint="Enter Task Name"
+        android:hint="Task Name"
         android:inputType="textPersonName"
-        android:background="@drawable/edit"
-        android:textColor="#ffffff"
-        android:textColorHint="#ffffff" />
-
-    <TextView
-        android:id="@+id/new_task_title2_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Start Time"
-        android:textSize="23sp"
-        />
-
-    <TextView
-        android:id="@+id/optional"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(optional)"
-        android:textSize="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="75dp"
-        />
+        android:textColor="#6c757d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_task_text_view" />
 
     <EditText
         android:id="@+id/start_time_edit_text"
-        android:layout_width="222dp"
-        android:layout_height="44dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
         android:ems="10"
-        android:gravity="center"
-        android:hint="Enter Start Time"
+        android:hint="Start Time"
         android:inputType="textPersonName"
-        android:background="@drawable/edit"
-        android:textColor="#ffffff"
-        android:textColorHint="#ffffff" />
-
-    <TextView
-        android:id="@+id/new_task_title3_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="End TIme"
-        android:textSize="25sp"
-        android:layout_marginTop="10dp"
-        />
-
-    <TextView
-        android:id="@+id/optional1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(optional)"
-        android:textSize="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="75dp"
-        />
+        android:text=""
+        android:textColor="#6c757d"
+        app:layout_constraintEnd_toEndOf="@+id/task_name_edit_text"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="@+id/task_name_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/task_name_edit_text" />
 
     <EditText
         android:id="@+id/end_time_edit_text"
-        android:layout_width="222dp"
-        android:layout_height="44dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:ems="10"
-        android:gravity="center"
-        android:hint="Enter End Time"
+        android:hint="End Time"
         android:inputType="textPersonName"
         android:text=""
-        android:background="@drawable/edit"
-        android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        />
+        android:textColor="#6c757d"
+        app:layout_constraintEnd_toEndOf="@+id/start_time_edit_text"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="@+id/start_time_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/start_time_edit_text" />
 
     <Button
         android:id="@+id/create_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_width="420dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="96dp"
+        android:background="#FF436D"
+        android:fontFamily="@font/proxima_nova"
         android:text="Create"
-        />
-</LinearLayout>
+        android:textColor="#293241"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_time_edit_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
