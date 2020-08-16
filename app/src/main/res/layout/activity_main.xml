@@ -15,11 +15,11 @@
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
         android:layout_gravity="center"
-        tools:srcCompat="@drawable/defuse" />
+        app:srcCompat="@drawable/defuse" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="222dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/proxima_nova"
         android:text="Defuse"
