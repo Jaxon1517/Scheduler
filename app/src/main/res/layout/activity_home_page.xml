@@ -54,18 +54,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="285dp"
-        android:layout_marginRight="285dp"
-        android:layout_marginBottom="616dp"
         android:fontFamily="@font/proxima_nova"
         android:text="James"
         android:textColor="#FF436D"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
@@ -73,16 +67,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginRight="153dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/proxima_nova"
         android:text="@string/home_welcome"
         android:textColor="#293241"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -116,7 +105,6 @@
         android:text="Walk the dog"
         android:textColor="#293241"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2" />
@@ -253,12 +241,10 @@
         android:text="08:00pm"
         android:textColor="#6c757d"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/view2" />
 
     <TextView
         android:id="@+id/textView7"

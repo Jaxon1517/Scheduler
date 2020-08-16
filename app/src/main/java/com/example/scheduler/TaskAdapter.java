@@ -24,7 +24,7 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         titleTextView.setText(activityMsg.getTitle());
 
         TextView startTimeView = convertView.findViewById(R.id.startTextView);
-        startTimeView.setText(activityMsg.getStartTime());
+        startTimeView.setText(activityMsg.getStartTime() + " - " + activityMsg.getEndTime());
 
         return convertView;
     }
