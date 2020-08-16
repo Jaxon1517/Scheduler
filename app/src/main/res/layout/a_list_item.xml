@@ -19,7 +19,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/descTextView"
+        android:id="@+id/startTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
