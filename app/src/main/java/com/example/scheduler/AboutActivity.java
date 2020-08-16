@@ -22,6 +22,7 @@ public class AboutActivity extends AppIntro {
     public void onSkipPressed(Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
         // Decide what to do when the user clicks on "Skip"
+
     }
 
     @Override
