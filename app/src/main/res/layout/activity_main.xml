@@ -15,7 +15,7 @@
         android:layout_height="100dp"
 
         android:layout_marginTop="200dp"
-        app:srcCompat="@drawable/Defuse" />
+        tools:srcCompat="@drawable/Defuse" />
 
     <TextView
         android:id="@+id/textView13"
