@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 
-import com.airbnb.lottie.LottieAnimationView;
-
 public class MainActivity extends AppCompatActivity {
 
     private static int Next = 3000;
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent intent = new Intent( MainActivity.this, SurveyActivity.class);
+                Intent intent = new Intent( MainActivity.this, AboutActivity.class);
                 startActivity(intent);
                 finish();
             }
